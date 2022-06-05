@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/docreg.css">
+    <title>DOCTOR'S REGISTER</title>
+</head>
+
+<body>
+    <table border="1" width="470" align="center" bgcolor="lightgreen">
+        <center>
+            <caption><h4>DATA INPUT</h4></caption>
+            <tr>
+                <td rowspan="2" align="center"><strong>PATIENT'S NAME</strong></td>
+                <td colspan="2" align="center"><strong>PATIENT'S STATUS</strong></td>
+            </tr>
+            <tr align="center">
+                <td><strong>AGE</strong></td>
+                <td><strong>DISEASE</strong></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="text" name="name" id="pName"></td>
+                <td align="center"><input type="number" name="age" id="pAge"></td>
+                <td align="center"><input type="text" name="disease" id="pDisease"></td>
+            </tr>
+            <br>
+            <div>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="button" value="Register Patient" id="regPatient" onclick="initUI()">
+                    </td>
+            </div>
+            </tr>
+        </center>
+    </table>
+
+    <table border="1" width="470" align="center" bgcolor="lightgreen">
+        <center>
+            <h4>DISPLAY DATA</h4>
+            <thead align="center">
+                <tr>
+                    <td><strong>NAME</strong></td>
+                    <td><strong>AGE</strong></td>
+                    <td><strong>DISEASE</strong></td>
+                </tr>
+                <tbody id="displayPatients"></tbody>
+            </thead>
+            
+        </center>
+    </table>
+    <script src="javascript/docreg.js"></script>
+</body>
+
+</html>
